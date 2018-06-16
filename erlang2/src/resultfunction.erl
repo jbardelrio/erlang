@@ -1,14 +1,22 @@
 %% @author Jesus
-%% @doc @todo Add description to hola_mundo.
+%% @doc @todo Add description to resultfunction.
 
 
--module(hola_mundo).
+-module(resultfunction).
+
 
 %% ====================================================================
 %% API functions
 %% ====================================================================
 -export([]).
 -compile([export_all]).
+
+
+start() -> 
+   X = 40, 
+   Y = 50, 
+   Result = X + Y, 
+   io:format("~w",[Result ++ "~n"]).
 
 mundo() ->
 io:format("Hola mundo!~n~n", []).

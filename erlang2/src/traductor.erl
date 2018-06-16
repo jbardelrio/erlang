@@ -1,18 +1,19 @@
 %% @author Jesus
-%% @doc @todo Add description to hola_mundo.
+%% @doc @todo Add description to traductor.
 
 
--module(hola_mundo).
+-module(traductor).
 
 %% ====================================================================
 %% API functions
 %% ====================================================================
--export([]).
--compile([export_all]).
 
-mundo() ->
-io:format("Hola mundo!~n~n", []).
-
+-export([get/1]).
+-import(proplists, [get_value/2]).
+data() ->
+[{"hi", "hola"}, {"bye", "adios"}].
+get(Key) ->
+get_value(Key, data()).
 
 %% ====================================================================
 %% Internal functions
