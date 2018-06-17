@@ -1,19 +1,21 @@
 %% @author Jesus
-%% @doc @todo Add description to hola_mundo.
+%% @doc @todo Add description to tuple.
 
 
--module(hola_mundo).
+-module(tuple).
 
 %% ====================================================================
 %% API functions
 %% ====================================================================
--export([]).
--compile([export_all]).
--import(io,[fwrite/1]).
+-export([start/0, start2/0]). 
 
-mundo() ->
-io:fwrite("Hola mundo!~n~n", []).
+start() -> 
+   P = {john,24,{june,25}} , 
+   io:fwrite("~w",[tuple_size(P)]).
 
+start2() -> 
+   P = {john,24,{june,25}} , 
+   io:fwrite("~w",[P]).
 
 %% ====================================================================
 %% Internal functions

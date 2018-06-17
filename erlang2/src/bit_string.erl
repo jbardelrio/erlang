@@ -1,19 +1,18 @@
 %% @author Jesus
-%% @doc @todo Add description to hola_mundo.
+%% @doc @todo Add description to bit_string.
 
 
--module(hola_mundo).
+-module(bit_string).
 
 %% ====================================================================
 %% API functions
 %% ====================================================================
--export([]).
--compile([export_all]).
--import(io,[fwrite/1]).
+-export([start/0]).
 
-mundo() ->
-io:fwrite("Hola mundo!~n~n", []).
-
+start() ->
+   Bin1 = <<10,20>>,
+   X = binary_to_list(Bin1),
+   io:fwrite("~w",[X]).
 
 %% ====================================================================
 %% Internal functions

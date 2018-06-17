@@ -1,19 +1,16 @@
 %% @author Jesus
-%% @doc @todo Add description to hola_mundo.
+%% @doc @todo Add description to boolean.
 
 
--module(hola_mundo).
+-module(boolean).
 
 %% ====================================================================
 %% API functions
 %% ====================================================================
--export([]).
--compile([export_all]).
--import(io,[fwrite/1]).
+-export([start/0]).
 
-mundo() ->
-io:fwrite("Hola mundo!~n~n", []).
-
+start() ->
+   io:fwrite(2 =< 3).
 
 %% ====================================================================
 %% Internal functions

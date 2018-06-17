@@ -1,19 +1,17 @@
 %% @author Jesus
-%% @doc @todo Add description to hola_mundo.
+%% @doc @todo Add description to list.
 
 
--module(hola_mundo).
+-module(list).
 
 %% ====================================================================
 %% API functions
 %% ====================================================================
--export([]).
--compile([export_all]).
--import(io,[fwrite/1]).
+-export([start/0]). 
 
-mundo() ->
-io:fwrite("Hola mundo!~n~n", []).
-
+start() -> 
+   L = [10,20,30] , 
+   io:fwrite("~w",[length(L)]).
 
 %% ====================================================================
 %% Internal functions

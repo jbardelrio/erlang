@@ -1,20 +1,17 @@
 %% @author Jesus
-%% @doc @todo Add description to hola_mundo.
+%% @doc @todo Add description to number.
 
 
--module(hola_mundo).
+-module(number).
 
 %% ====================================================================
 %% API functions
 %% ====================================================================
--export([]).
--compile([export_all]).
+-export([startnumber/0]).
 -import(io,[fwrite/1]).
 
-mundo() ->
-io:fwrite("Hola mundo!~n~n", []).
-
-
+startnumber() ->
+   io:fwrite("~w",[1+3]).
 %% ====================================================================
 %% Internal functions
 %% ====================================================================

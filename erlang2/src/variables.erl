@@ -1,19 +1,21 @@
 %% @author Jesus
-%% @doc @todo Add description to hola_mundo.
+%% @doc @todo Add description to variables.
 
 
--module(hola_mundo).
+-module(variables).
 
 %% ====================================================================
 %% API functions
 %% ====================================================================
--export([]).
--compile([export_all]).
--import(io,[fwrite/1]).
+-export([start/0]). 
 
-mundo() ->
-io:fwrite("Hola mundo!~n~n", []).
+%LAS VARIABLES DEBEN EMPEZAR POR MAYÚSCULAS
 
+start() -> 
+   X = 40, 
+   Y = 50, 
+   Result = X + Y, 
+   io:fwrite("~w",[Result]).
 
 %% ====================================================================
 %% Internal functions

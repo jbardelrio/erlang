@@ -1,20 +1,22 @@
 %% @author Jesus
-%% @doc @todo Add description to hola_mundo.
+%% @doc @todo Add description to atom.
 
 
--module(hola_mundo).
+-module(atom).
 
 %% ====================================================================
 %% API functions
 %% ====================================================================
--export([]).
--compile([export_all]).
--import(io,[fwrite/1]).
+-export([start/0, start2/0]).
 
-mundo() ->
-io:fwrite("Hola mundo!~n~n", []).
+%el tipo atom se puede poner con o sin comillas simples. Tiene que empezar por minúsculas y 
+%puede incluir mayúsculas, minúsculas, números, guión bajo y la @
 
+start() ->
+   io:fwrite(atom1).
 
+start2() ->
+   io:fwrite('atom1').
 %% ====================================================================
 %% Internal functions
 %% ====================================================================
