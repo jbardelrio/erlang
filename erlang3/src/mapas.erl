@@ -1,8 +1,8 @@
 %% @author Jesus.Bargueno
-%% @doc @todo Add description to file_read.
+%% @doc @todo Add description to maps.
 
 
--module(file_read).
+-module(mapas).
 
 %% ====================================================================
 %% API functions
@@ -10,8 +10,10 @@
 -export([start/0]). 
 
 start() -> 
-   Txt = file:read_file("NewFile.txt"), 
-   io:fwrite("~p~n",[Txt]).
+   M1 = #{name=>john,age=>25}, 
+   io:fwrite("~w",[map_size(M1)]),
+   io:fwrite("~n"),
+   io:fwrite("~w",[M1]).
 
 
 %% ====================================================================

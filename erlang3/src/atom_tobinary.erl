@@ -1,8 +1,8 @@
 %% @author Jesus.Bargueno
-%% @doc @todo Add description to file_read.
+%% @doc @todo Add description to atom_tobinary.
 
 
--module(file_read).
+-module(atom_tobinary).
 
 %% ====================================================================
 %% API functions
@@ -10,8 +10,7 @@
 -export([start/0]). 
 
 start() -> 
-   Txt = file:read_file("NewFile.txt"), 
-   io:fwrite("~p~n",[Txt]).
+   io:fwrite("~p~n",[atom_to_binary('Erlang', utf8)]).
 
 
 %% ====================================================================

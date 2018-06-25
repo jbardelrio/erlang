@@ -1,17 +1,16 @@
 %% @author Jesus.Bargueno
-%% @doc @todo Add description to file_read.
+%% @doc @todo Add description to atom_to_list.
 
 
--module(file_read).
+-module(atom_to_list).
 
 %% ====================================================================
 %% API functions
 %% ====================================================================
 -export([start/0]). 
 
-start() -> 
-   Txt = file:read_file("NewFile.txt"), 
-   io:fwrite("~p~n",[Txt]).
+start() ->   
+   io:fwrite("~p~n",[atom_to_list(atom1)]).
 
 
 %% ====================================================================

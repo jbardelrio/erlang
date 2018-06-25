@@ -1,17 +1,18 @@
 %% @author Jesus.Bargueno
-%% @doc @todo Add description to file_read.
+%% @doc @todo Add description to atomis_atom.
 
 
--module(file_read).
+-module(atomis_atom).
 
 %% ====================================================================
 %% API functions
 %% ====================================================================
--export([start/0]). 
+-export([start/1]). 
 
-start() -> 
-   Txt = file:read_file("NewFile.txt"), 
-   io:fwrite("~p~n",[Txt]).
+start(Word) -> 
+   io:fwrite(atom1), 
+   io:fwrite("~n"), 
+   io:fwrite("~p~n",[is_atom(Word)]).
 
 
 %% ====================================================================
